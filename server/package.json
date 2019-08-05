@@ -1,0 +1,21 @@
+{
+  "name": "rcon-web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Bharat Middha <bmiddha99@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.9",
+    "@types/socket.io": "^2.1.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0",
+    "ts-rcon": "^1.1.1"
+  },
+  "scripts": {
+    "build": "tsc"
+  }
+}
