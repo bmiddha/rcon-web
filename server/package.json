@@ -16,6 +16,7 @@
     "ts-rcon": "^1.1.1"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "start": "node build/index.js"
   }
 }

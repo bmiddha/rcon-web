@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "author": "Bharat Middha <bmiddha99@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "install": "yarn install:client && yarn install:server",
+    "install:client": "cd client && yarn install",
+    "install:server": "cd server && yarn install",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "cd client && yarn build",
+    "build:server": "cd server && yarn build",
+    "start": "cd server && yarn start"
+  }
 }
