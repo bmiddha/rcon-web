@@ -4,7 +4,6 @@ import express, { Request, Response } from 'express';
 import http from 'http';
 import path from 'path';
 
-
 const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
@@ -53,6 +52,5 @@ io.on('connection', (client) => {
         rconClient.send(command);
     });
 })
-
 
 server.listen(port);
