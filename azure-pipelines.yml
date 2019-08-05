@@ -16,6 +16,6 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    cd server && npm install && npm build
-    cd client && npm install && npm build
+    cd server && npm install && npm run build
+    cd client && npm install && npm run build
   displayName: 'npm install and build'
