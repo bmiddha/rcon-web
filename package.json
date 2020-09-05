@@ -1,16 +1,24 @@
 {
-  "name": "rcon-web",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Bharat Middha <bmiddha99@gmail.com>",
-  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "client",
+      "server"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "scripts": {
-    "install": "yarn install:client && yarn install:server",
-    "install:client": "cd client && yarn install",
-    "install:server": "cd server && yarn install",
-    "build": "yarn build:client && yarn build:server",
-    "build:client": "cd client && yarn build",
-    "build:server": "cd server && yarn build",
-    "start": "cd server && yarn start"
+    "build": "lerna run build --stream",
+    "start": "node server/build/index.js"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.1",
+    "pretty-quick": "^3.0.0"
   }
 }
