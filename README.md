@@ -1,6 +1,6 @@
 # rcon-web
 
-[![Build Status](https://bmiddha.visualstudio.com/LinuxKnight/_apis/build/status/bmiddha.rcon-web?branchName=master)](https://bmiddha.visualstudio.com/LinuxKnight/_build/latest?definitionId=1&branchName=master)
+[![Node CI](https://github.com/bmiddha/rcon-web/workflows/Node%20CI/badge.svg)](https://github.com/bmiddha/rcon-web/actions?query=workflow%3A%22Node+CI%22)
 
 ## Getting Started
 
