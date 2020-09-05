@@ -1,0 +1,20 @@
+name: Node CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-publish:
+    name: build-publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.0.0
+      - name: Build
+        run: |
+          yarn
+          yarn build
